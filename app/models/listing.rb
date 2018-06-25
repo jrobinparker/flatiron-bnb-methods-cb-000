@@ -13,7 +13,7 @@ class Listing < ActiveRecord::Base
   validates :neighborhood, presence: true
 
   def average_review_rating
-    
+    self.reviews.average
  
   
   
