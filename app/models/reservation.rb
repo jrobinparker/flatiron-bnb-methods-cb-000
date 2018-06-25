@@ -8,5 +8,7 @@ class Reservation < ActiveRecord::Base
 
   def total_price 
     days = self.pluck('DATEDIFF(:checkin, :checkout)')
+    days * self.price 
+  end
   
 end
