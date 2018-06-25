@@ -7,7 +7,7 @@ class Reservation < ActiveRecord::Base
   validates :checkout, presence: true  
 
   def total_price 
-    days = self.pluck('DATEDIFF(:checkin, :checkout)')
+    days = @reservation.pluck('DATEDIFF(:checkin, :checkout)')
     days * self.price 
   end
   
