@@ -4,6 +4,7 @@ class City < ActiveRecord::Base
 
    def most_res
     @city.listing.order("DESC")
+  end 
   
 end
 
