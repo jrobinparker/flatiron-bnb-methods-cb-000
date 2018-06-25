@@ -11,7 +11,7 @@ class Reservation < ActiveRecord::Base
   end
   
   def total_price(duration)
-    self.find(price)
+    price = self.find(price)
     duration * price 
   end 
   
