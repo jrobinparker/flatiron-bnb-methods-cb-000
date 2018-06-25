@@ -3,7 +3,7 @@ class Neighborhood < ActiveRecord::Base
   has_many :listings
   
   def most_res 
-    self.listings.count(:neighborhood_id)
+    self.listings.count(:neighborhood_id).order("DESC")
   end 
 
 end
