@@ -3,7 +3,7 @@ class Neighborhood < ActiveRecord::Base
   has_many :listings
   
   def most_res 
-    self.listings.maximum(:listings)
+    self.listings.maximum(:neighborhood_id)
   end 
 
 end
