@@ -3,7 +3,7 @@ class City < ActiveRecord::Base
   has_many :listings, :through => :neighborhoods
 
    def most_res
-    @city.listing.maximum(:reservations)
+    self.listing.maximum
   end 
   
 end
