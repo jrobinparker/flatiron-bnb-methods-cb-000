@@ -6,5 +6,7 @@ class Reservation < ActiveRecord::Base
   validates :checkin, presence: true
   validates :checkout, presence: true  
 
+  def total_price 
+    self.
   
 end
