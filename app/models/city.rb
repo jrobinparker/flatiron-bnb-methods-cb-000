@@ -3,7 +3,7 @@ class City < ActiveRecord::Base
   has_many :listings, :through => :neighborhoods
 
    def most_res
-    @city.listing.order("DESC")
+    @city.find_by()
   end 
   
 end
