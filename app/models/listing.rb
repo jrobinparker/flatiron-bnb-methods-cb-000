@@ -13,8 +13,7 @@ class Listing < ActiveRecord::Base
   validates :neighborhood, presence: true
 
   
-  def most_res
-    @city.listing.order("value DESC").first
+ 
   
   
 end
