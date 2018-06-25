@@ -7,6 +7,6 @@ class Reservation < ActiveRecord::Base
   validates :checkout, presence: true  
 
   def total_price 
-    days = self.checkout - self.checkin
+    self.
   
 end
