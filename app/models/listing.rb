@@ -17,5 +17,9 @@ class Listing < ActiveRecord::Base
   end 
  
   
+  def to_host
+    self.host.status = true
+  end  
+  
   
 end
